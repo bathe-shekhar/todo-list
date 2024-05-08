@@ -1,7 +1,6 @@
 import Projcet from "./project";
-import projcet from "./project";
 import Task from "./task";
-import task from "./task";
+
 
 export default function todoController() {
 

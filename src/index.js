@@ -1,4 +1,4 @@
-import displayProjects from './display/displayProjects';
+import displayProjects from './displayProjects';
 // import displayTasks from './display/displayTasks';
 import './style.css';
 

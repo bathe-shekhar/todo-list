@@ -1,6 +1,6 @@
-import data from "../assets/data.json";
+import data from "./assets/data.json";
 // import displayTasks from "./displayTasks";
-import todoController from "../task-controller/todoController";
+import todoController from "./todoController";
 
 export default function displayProjects() {
 
