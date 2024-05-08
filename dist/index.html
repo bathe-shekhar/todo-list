@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+<script defer src="main.bundle.js"></script></head>
+
+<body>
+    <header>
+        <h1>Todo List App</h1>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">Projects</div>
+                <div class="sidebar-button">
+                    <button id="new-project">New +</button>
+                </div>
+            </div>
+            <div class="project-list" id="project-list">
+                <!-- <ul>
+                    <li><button>Project 1</button></li>
+                    <li><button>Project 2</button></li>
+
+                </ul> -->
+            </div>
+
+            <div class="project-diaglog" id="project-diaglog" hidden>
+                <!-- <button id="project-diaglog-close" class="project-diaglog-close">X</button> -->
+                <h3>Add Project</h3>
+                <div class="input-block">
+                    <label for="project-name">Title: </label>
+                    <input type="text" id="project-name" name="project-name" placeholder="Project Name">
+                </div>
+                <div class="input-block">
+                    <button id="add-project-button" class="add-project-button" autofocus>Add</button>
+                    <button id="close-project-button" class="close-project-button" autofocus>Close</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="todo-list-block">
+            <div class="todo-list-header">
+                <div class="todo-list-project-title" id="todo-list-project-title"></div>
+                <div class="todo-list-add-task">
+                    <button class="add-task" id="add-task">Add task</button>
+                </div>
+            </div>
+            <div class="todo-list" id="todo-list">
+                <!-- 
+                <div class="task-block">
+                    <button class="remove-task">X</button>
+                    <div class="task">
+                        <h3 class="task-title">Task 1</h3>
+                        <p>Task Due date: <span class="task-due-date">20-04-2024</span></p>
+                        <p>Priority: <span class="task-priority">High</span></p>
+                        <h4>Description</h4>
+                        <p class="task-notes">Todo task 1</p>
+                    </div>
+                </div> -->
+
+                <!-- 
+                <div class="task-block">
+                   
+                </div> -->
+
+            </div>
+
+            <dialog id="task-dialog" class="task-dialog">
+                <h3>Add Task</h3>
+                <div class="input-block">
+                    <label for="task-name">Name: </label>
+                    <input type="text" id="task-name" name="task-name" placeholder="Task Name">
+                </div>
+                <div class="input-block">
+                    <label for="task-due-date">Due Date: </label>
+                    <input type="date" id="task-due-date" due-date="task-due-date" placeholder="Task due-date">
+                </div>
+                <div class="input-block">
+                    <label for="task-priority">Priority: </label>
+                    <input type="text" id="task-priority" priority="task-priority" placeholder="Task priority">
+                </div>
+                <div class="input-block">
+                    <label for="task-description">Description: </label>
+                    <input type="text" id="task-description" description="task-description"
+                        placeholder="Task description">
+                </div>
+                <div class="input-block input-control">
+                    <button id="add-task-button" class="add-task-button" autofocus>Add</button>
+                    <button id="close-task-button" class="close-task-button" autofocus>Close</button>
+                </div>
+            </dialog>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
