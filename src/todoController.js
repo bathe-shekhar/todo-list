@@ -13,10 +13,52 @@ export default function todoController() {
         // console.log("data projects: ", projects);
         // localStorage.setItem("projects", JSON.stringify(data));
     }
-    // else {
-    //     projects = JSON.parse(localStorage.getItem("projects"));
-    //     console.log("storage projects: ", projects);
-    // }
+    else {
+        // projects = JSON.parse(localStorage.getItem("projects"));
+        // console.log("storage projects: ", projects);
+        projects = [
+            {
+                "name": "Project 1",
+                "tasks": [
+                    {
+                        "name": "task 1",
+                        "due_date": "10/05/2024",
+                        "priority": "high",
+                        "notes": "task1 for project 1"
+                    },
+                    {
+                        "name": "task 2",
+                        "due_date": "15/05/2024",
+                        "priority": "low",
+                        "notes": "task2 for project 1"
+                    }
+                ]
+            },
+            {
+                "name": "Project 2",
+                "tasks": [
+                    {
+                        "name": "task 1",
+                        "due_date": "12/05/2024",
+                        "priority": "high",
+                        "notes": "task1 for project 2"
+                    },
+                    {
+                        "name": "task 2",
+                        "due_date": "18/05/2024",
+                        "priority": "low",
+                        "notes": "task2 for project 2"
+                    },
+                    {
+                        "name": "task 3",
+                        "due_date": "09/05/2024",
+                        "priority": "low",
+                        "notes": "task3 for project 2"
+                    }
+                ]
+            }
+        ]
+    }
 
 
     function getProjects() {
