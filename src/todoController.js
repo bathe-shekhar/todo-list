@@ -6,15 +6,17 @@ export default function todoController() {
 
     var projects = [];
 
-    if (!localStorage.getItem("projects")) {
-        projects = data;
-        console.log("data projects: ", projects);
-        localStorage.setItem("projects", JSON.stringify(data));
-    }
-    else {
+    if (localStorage.getItem("projects")) {
         projects = JSON.parse(localStorage.getItem("projects"));
         console.log("storage projects: ", projects);
+        // projects = data;
+        // console.log("data projects: ", projects);
+        // localStorage.setItem("projects", JSON.stringify(data));
     }
+    // else {
+    //     projects = JSON.parse(localStorage.getItem("projects"));
+    //     console.log("storage projects: ", projects);
+    // }
 
 
     function getProjects() {
